@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "bug",
+    "color": "d73a4a",
+    "description": "Something isn't working as expected"
+  },
+  {
+    "id": 2,
+    "name": "new feature request",
+    "color": "a2eeef",
+    "description": "Request for a new feature or enhancement"
+  },
+  {
+    "id": 3,
+    "name": "question",
+    "color": "d876e3",
+    "description": "Further information or clarification is requested"
+  },
+  {
+    "id": 4,
+    "name": "documentation",
+    "color": "0075ca",
+    "description": "Improvements or additions to documentation"
+  },
+  {
+    "id": 5,
+    "name": "aws",
+    "color": "FF9900",
+    "description": "Related to AWS infrastructure or services"
+  },
+  {
+    "id": 6,
+    "name": "gcp",
+    "color": "4285F4",
+    "description": "Related to Google Cloud Platform services"
+  },
+  {
+    "id": 7,
+    "name": "ai service",
+    "color": "6f42c1",
+    "description": "Related to AI model serving or inference endpoints"
+  },
+  {
+    "id": 8,
+    "name": "mlc",
+    "color": "e4e669",
+    "description": "Related to the MLC pipeline or tooling"
+  },
+  {
+    "id": 9,
+    "name": "support",
+    "color": "0e8a16",
+    "description": "Customer or internal support request"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "issue_code": "ISSUE-101",
+    "title": "Bug: API endpoint crashing on malformed JSON payload",
+    "body": "The /predict API endpoint was returning a 500 error when receiving malformed JSON. Fixed by adding request validation middleware. Deployed to staging.",
+    "labels": ["bug"]
+  },
+  {
+    "issue_code": "ISSUE-102",
+    "title": "Documentation: AWS IAM role setup guide for S3 access",
+    "body": "Step-by-step guide for configuring AWS IAM roles and S3 bucket policies for cross-account access. Covers trust relationships, inline policies, and role chaining.",
+    "labels": ["documentation", "aws"]
+  },
+  {
+    "issue_code": "ISSUE-103",
+    "title": "Feature: GCP Vertex AI online prediction endpoint integration",
+    "body": "Added support for GCP Vertex AI online prediction endpoints. Includes endpoint creation, model deployment, and real-time inference calls via the Vertex AI SDK.",
+    "labels": ["new feature request", "gcp"]
+  },
+  {
+    "issue_code": "ISSUE-104",
+    "title": "Bug: Model serving ai service returning outdated predictions after deploy",
+    "body": "After a deployment the ai service was serving predictions from the previous model version. Root cause was a missing cache invalidation step in the deployment pipeline. Fixed and documented.",
+    "labels": ["bug", "ai service"]
+  },
+  {
+    "issue_code": "ISSUE-105",
+    "title": "Documentation: GCP Cloud Run deployment checklist and service account permissions",
+    "body": "Comprehensive checklist for deploying services to GCP Cloud Run. Covers service account roles, permission scopes, environment variable injection, and artifact registry access.",
+    "labels": ["documentation", "gcp"]
+  },
+  {
+    "issue_code": "ISSUE-106",
+    "title": "Question: MLC pipeline support ticket routing — how does priority assignment work?",
+    "body": "Answered: The mlc support pipeline uses a rule-based router that assigns priority based on keyword matching in the ticket title and body. P1 for production outages, P2 for feature requests, P3 for general questions.",
+    "labels": ["question", "mlc", "support"]
+  },
+  {
+    "issue_code": "ISSUE-107",
+    "title": "Bug: AWS SageMaker endpoint timeout during model warm-up on cold start",
+    "body": "SageMaker endpoint was timing out on cold start because the model artifact download exceeded the default timeout. Fixed by increasing the container startup timeout and pre-loading the model into memory on init.",
+    "labels": ["bug", "aws"]
+  },
+  {
+    "issue_code": "ISSUE-108",
+    "title": "Documentation: How to configure batch prediction jobs on cloud platforms",
+    "body": "Guide covering batch prediction setup on both AWS SageMaker and GCP Vertex AI. Includes job configuration, input/output data formats, IAM permissions, and cost optimization tips.",
+    "labels": ["documentation", "aws", "gcp"]
+  }
+]

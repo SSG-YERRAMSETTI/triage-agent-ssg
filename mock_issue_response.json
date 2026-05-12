@@ -1,0 +1,73 @@
+[
+  {
+    "issue_code": "ISSUE-001",
+    "id": "ISSUE-001",
+    "title": "Bug: API returns 500 error on empty payload",
+    "body": "Getting a server error when the request body is empty. Happens consistently on the /predict endpoint. Logs show a NullPointerException in the request parser. Needs fix urgently.",
+    "state": "open",
+    "created_at": "2026-04-30T09:00:00Z",
+    "assignee": null,
+    "comments": []
+  },
+  {
+    "issue_code": "ISSUE-002",
+    "id": "ISSUE-002",
+    "title": "New feature request: Add support for GCP Vertex AI batch predictions",
+    "body": "We need to support batch prediction jobs on GCP Vertex AI. Currently only real-time inference is supported. This would allow large-scale offline scoring without keeping the endpoint warm.",
+    "state": "open",
+    "created_at": "2026-05-08T14:30:00Z",
+    "assignee": null,
+    "comments": []
+  },
+  {
+    "issue_code": "ISSUE-003",
+    "id": "ISSUE-003",
+    "title": "Documentation missing for AWS S3 integration setup",
+    "body": "The docs page for AWS S3 bucket configuration is incomplete. Missing sections on IAM role setup and cross-account access. New team members are blocked getting started.",
+    "state": "open",
+    "created_at": "2026-04-28T11:15:00Z",
+    "assignee": "urooj",
+    "comments": [
+      {
+        "author": "urooj",
+        "text": "I am looking into this and will update the docs page by end of week."
+      }
+    ]
+  },
+  {
+    "issue_code": "ISSUE-004",
+    "id": "ISSUE-004",
+    "title": "Question: How do I configure support tickets routing for mlc pipeline?",
+    "body": "Having trouble understanding how the mlc support pipeline routes incoming tickets. Is there documentation on the routing logic? Need help understanding the priority tiers.",
+    "state": "open",
+    "created_at": "2026-05-09T08:00:00Z",
+    "assignee": null,
+    "comments": []
+  },
+  {
+    "issue_code": "ISSUE-005",
+    "id": "ISSUE-005",
+    "title": "Fix: Model drift detected in production — ai service returning stale predictions",
+    "body": "The ai service endpoint has been returning predictions based on the old model version since the last deployment. The model refresh job failed silently. Error logs show a timeout during model warm-up.",
+    "state": "open",
+    "created_at": "2026-04-25T16:45:00Z",
+    "assignee": null,
+    "comments": []
+  },
+  {
+    "issue_code": "ISSUE-006",
+    "id": "ISSUE-006",
+    "title": "Bug: GCP Cloud Run deployment fails with permission denied error",
+    "body": "Deploying to GCP Cloud Run throws a permission denied error on the service account. The service account has the Cloud Run Invoker role but is missing the Storage Object Viewer role for accessing the model artifacts.",
+    "state": "closed",
+    "created_at": "2026-04-15T10:00:00Z",
+    "closed_at": "2026-04-20T14:00:00Z",
+    "assignee": "nithin",
+    "comments": [
+      {
+        "author": "nithin",
+        "text": "Fixed by adding Storage Object Viewer role to the service account. Closing this issue."
+      }
+    ]
+  }
+]
