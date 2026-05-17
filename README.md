@@ -19,6 +19,7 @@ Triage Agent is a LangGraph-powered autonomous system that handles the full GitH
 
 ---
 
+
 ## The Problem It Solves
 
 Most engineering teams treat issue management as background noise. Issues sit open for weeks, nobody knows who owns what, engineers waste time context-switching just to figure out what's still relevant, and important bugs get buried under a pile of stale feature requests.
