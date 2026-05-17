@@ -1,1 +1,8 @@
+# Core agent framework
 langgraph>=0.2.0
+
+# Date/time utilities
+python-dateutil>=2.8.2
+
+# Type hints support (Python 3.10 already includes most, but useful for older envs)
+typing-extensions>=4.0.0
